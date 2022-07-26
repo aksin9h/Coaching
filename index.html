@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("image4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-position: center;
+        }
+
+        .navigation {
+            background-color: black;
+            text-align: center;
+        }
+
+        .navigation ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .navigation ul li {
+            width: 120px;
+            margin: 10px;
+            padding: 10px 100px;
+
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color:white
+        }
+
+        .active,
+        .navigation ul li:hover {
+            background-color:aqua;
+            border-radius: 4px;
+        }
+
+        .sub{
+            display: none;
+        }
+        .navigation ul li:hover .sub {
+            display: block;
+            background-color: rgb(2, 31, 2);
+            position: absolute;
+        }
+        .navigation ul li:hover .sub ul {
+            display: block;
+            
+        }
+        .navigation ul li:hover .sub ul li{
+            border-bottom: 2px dotted white;
+        }
+        .navigation ul li:hover .sub ul li:last-child{
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Courses</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">PHP</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Investers</a>
+                <div class="sub">
+                    <ul>
+                        <li><a href="#">TCS</a></li>
+                        <li><a href="#">Infosys</a></li>
+                        <li><a href="#">Wipro</a></li>
+                        <li><a href="#">Cognizent</a></li>
+                        <li><a href="#">Tata</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
